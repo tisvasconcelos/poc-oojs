@@ -1,16 +1,16 @@
 Contact = function(){
-	this.extend(core);
-	_super = this.super;
+	_super = this.extend(core);
 
 	this.submitForm = function(form){
 
 	};
 
 	this.test = function(con){
-		_super.test(con);
-	}('a');
+		
+	};
+
+	console.log(this);
+	console.log(_super);
 };
 
 var contact = new Contact();
-
-contact.error.show();

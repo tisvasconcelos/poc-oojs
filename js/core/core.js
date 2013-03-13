@@ -15,9 +15,7 @@ Object.prototype.extend = function(){
 	for(method in arg){
 		this[method] = arg[method];
 	}
-	this['super'] = arg;
-
-	console.log(this);
+	return arg;
 };
 
 Core = function(){
@@ -28,7 +26,7 @@ Core = function(){
 
 	this.error = [];
 	this.error.show = function(){
-		console.error('Erro custom');
+		
 	};
 
 };
