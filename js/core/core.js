@@ -20,8 +20,8 @@ Object.prototype.extend = function(){
 
 Core = function(){
 
-	this.test = function(co){
-		console.log(co);
+	this.test = function(core){
+		console.log(core);
 	}
 
 	this.error = [];
