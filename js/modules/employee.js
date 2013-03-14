@@ -1,5 +1,5 @@
 Employee = function(){
-	_super = this.extend(core);
+	_super = Class.extend(this,core);
 
 	this.submitForm = function(form){
 

@@ -1,6 +1,5 @@
 Manager = function(){
-
-	_super = this.extend(employee);
+	_super = Class.extend(this,employee);
 
 	this.test = function(manager){
 

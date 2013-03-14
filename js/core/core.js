@@ -1,24 +1,22 @@
-Object.prototype.extend = function(){
-	/*
-	Para extender multiplas classes, mas na hora de sobreescrever ficará valendo a última class
-	for(var i = 0, len = arguments.length; i < len; i++) {
-		var arg = arguments[i];
+Class = function(){
+        this.extend = function(){
+                var child = arguments[0],
+                        extend = arguments[1];
 
-		for(method in arg){
-			this[method] = arg[method];
-		}
-	}
-	*/
+                for(method in extend){
+                        child[method] = extend[method];
+                }
 
-	var arg = arguments[0];
-
-	for(method in arg){
-		this[method] = arg[method];
-	}
-	return arg;
+                return extend;
+        };
 };
+var Class = new Class();
 
 Core = function(){
+
+	this.something = function(){
+
+	}
 
 	this.test = function(core){
 		console.log(core);
